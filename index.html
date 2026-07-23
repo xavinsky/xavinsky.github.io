@@ -18,24 +18,29 @@
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     padding:2rem;
   }
-  main{ max-width:32rem; }
+  main{ max-width:32rem; width:100%; }
   h1{ font-size:1.6rem; margin:0 0 1.5rem; }
   ul{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:.75rem; }
+  li{ display:flex; gap:.5rem; }
   a{
     color:var(--accent); text-decoration:none; font-weight:600;
     border:1px solid var(--border); border-radius:.5rem;
-    padding:.75rem 1rem; display:flex; justify-content:space-between; align-items:center;
+    padding:.75rem 1rem;
     transition:border-color .15s;
   }
-  a:hover{ border-color:var(--accent); }
-  a small{ color:var(--muted); font-weight:400; }
+  a.item{ flex:1; }
+  a.gh{ color:var(--muted); flex:0 0 auto; }
+  a:hover{ border-color:var(--accent); color:var(--accent); }
 </style>
 </head>
 <body>
 <main>
   <h1>Xavinsky GitHub Pages</h1>
   <ul>
-    <li><a href="/memo/">Mémo Data Science / IA <small>syntaxes &amp; formules</small></a></li>
+    <li>
+      <a class="item" href="/memo/">Mémo Data Science &amp; IA</a>
+      <a class="gh" href="https://github.com/xavinsky/memo" title="Voir le repo GitHub">[G]</a>
+    </li>
   </ul>
 </main>
 </body>
