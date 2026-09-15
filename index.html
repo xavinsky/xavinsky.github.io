@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Xavinsky</title>
+<title>Les travaux de Xavinsky</title>
 <style>
   :root{
     --accent:#345AB2; --c1:#009DA8; --c2:#2A9F56; --c3:#F86F32; --c4:#FB9E4E;
@@ -29,7 +29,8 @@
     font-family:var(--font-text); font-size:var(--size-text); line-height:1.4;
     padding:.75rem 16px;
   }
-  main{ max-width:46rem; }
+  main{ max-width:80rem; }
+  .cols{ display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap:0 1.5rem; align-items:start; }
   h1, h2{ font-family:var(--font-title); margin:0; }
   h1{ font-size:var(--size-h1); color:var(--h1); margin-bottom:.5rem; }
   h2{ font-size:var(--size-h2); color:var(--h2); margin:1rem 0 .4rem; }
@@ -56,84 +57,100 @@
 </head>
 <body>
 <main>
-  <h1>Xavinsky</h1>
+  <h1>Les travaux de Xavinsky</h1>
 
-  <h2>Sites</h2>
-  <ul>
-    <li>
-      <div class="body">
-        <a class="title" href="/memoria/">MemorIA — Aide-mémoire Data Science &amp; IA</a>
-        <p class="desc">Concepts, outils, syntaxes, lexiques et références.</p>
-      </div>
-      <a class="src" href="https://github.com/xavinsky/memoria" title="Voir le repo GitHub">src</a>
-    </li>
-    <li>
-      <div class="body">
-        <a class="title" href="/search-video-google-cloud-tech/">Recherche vidéos Google Cloud Tech</a>
-        <p class="desc">Vidéos de la chaîne YouTube Google Cloud Tech, taguées par technologie et filtrables.</p>
-      </div>
-      <a class="src" href="https://github.com/xavinsky/search-video-google-cloud-tech" title="Voir le repo GitHub">src</a>
-    </li>
-  </ul>
+  <div class="cols">
+    <div class="col">
+      <h2>Sites de documentation</h2>
+      <ul>
+        <li>
+          <div class="body">
+            <a class="title" href="/memoria/">MemorIA — Aide-mémoire Data Science &amp; IA</a>
+            <p class="desc">Concepts, outils, syntaxes, lexiques et références.</p>
+          </div>
+          <a class="src" href="https://github.com/xavinsky/memoria" title="Voir le repo GitHub">src</a>
+        </li>
+        <li>
+          <div class="body">
+            <a class="title" href="/search-video-google-cloud-tech/">Recherche vidéos Google Cloud Tech</a>
+            <p class="desc">Vidéos de la chaîne YouTube Google Cloud Tech, taguées par technologie et filtrables.</p>
+          </div>
+          <a class="src" href="https://github.com/xavinsky/search-video-google-cloud-tech" title="Voir le repo GitHub">src</a>
+        </li>
+        <li>
+          <div class="body">
+            <a class="title" href="https://github.com/xavinsky/gcp-usage">gcp-usage</a>
+            <p class="desc">Référentiel pratique Google Cloud par thème : commandes, raisonnement, réflexes de diagnostic.</p>
+          </div>
+        </li>
+      </ul>
 
-  <h2>Le Cercle du Neurone Disparu</h2>
-  <p class="intro">Projet d'étude Le Wagon sur la détection d'hallucinations des LLM —
-    <a class="title" href="https://github.com/le-cercle-du-neurone-disparu">groupe GitHub</a>.</p>
-  <ul>
-    <li>
-      <div class="body">
-        <a class="title" href="https://le-cercle-du-neurone-disparu.github.io/etude-recherche-hallucination-llm/">Veille — Détection d'hallucinations LLM</a>
-        <p class="desc">Groupes de travail, papiers de recherche et publications grand public.</p>
-      </div>
-      <a class="src" href="https://github.com/le-cercle-du-neurone-disparu/etude-recherche-hallucination-llm" title="Voir le repo GitHub">src</a>
-    </li>
-    <li>
-      <div class="body">
-        <a class="title" href="/berlue-pitch/">Berlue — Pitch illustré</a>
-        <p class="desc">Présentation de Berlue, vérificateur d'hallucinations LLM.</p>
-      </div>
-      <a class="src" href="https://github.com/xavinsky/berlue-pitch" title="Voir le repo GitHub">src</a>
-    </li>
-    <li>
-      <div class="body">
-        <a class="title" href="https://github.com/le-cercle-du-neurone-disparu/berlue">berlue</a>
-        <p class="desc">Backend de détection : découpe la réponse d'un LLM en affirmations et vérifie chacune par SelfCheckGPT et un RAG sur FEVER.</p>
-      </div>
-    </li>
-    <li>
-      <div class="body">
-        <a class="title" href="https://github.com/le-cercle-du-neurone-disparu/aletheia">aletheia</a>
-        <p class="desc">Interface Streamlit du détecteur : poser une question, lire le verdict affirmation par affirmation.</p>
-      </div>
-    </li>
-  </ul>
+      <h2>Technique</h2>
+      <ul>
+        <li>
+          <div class="body">
+            <a class="title" href="https://github.com/xavinsky/benchmarks-deep-learning-rtx5070ti-mobile">benchmarks-deep-learning-rtx5070ti-mobile</a>
+            <p class="desc">Config et benchmarks TensorFlow sur RTX 5070 Ti Mobile (Blackwell, sm_120).</p>
+          </div>
+        </li>
+      </ul>
 
-  <h2>Dépôts</h2>
-  <ul>
-    <li>
-      <div class="body">
-        <a class="title" href="https://github.com/xavinsky/benchmarks-deep-learning-rtx5070ti-mobile">benchmarks-deep-learning-rtx5070ti-mobile</a>
-        <p class="desc">Config et benchmarks TensorFlow sur RTX 5070 Ti Mobile (Blackwell, sm_120).</p>
-      </div>
-    </li>
-    <li>
-      <div class="body">
-        <a class="title" href="https://github.com/xavinsky/gcp-usage">gcp-usage</a>
-        <p class="desc">Référentiel pratique Google Cloud par thème : commandes, raisonnement, réflexes de diagnostic.</p>
-      </div>
-    </li>
-  </ul>
+      <h2>Tools</h2>
+      <ul>
+        <li>
+          <div class="body">
+            <a class="title" href="https://github.com/xavinsky/monitoring-claude">monitoring-claude</a>
+            <p class="desc">Suivi du quota Claude Code (session 5h, semaine 7j, plafond Fable) : collecte systemd, dashboard statique et skill garde-fou avant les tâches non urgentes.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
 
-  <h2>Loisirs</h2>
-  <ul>
-    <li>
-      <div class="body">
-        <a class="title" href="/lolbynoobfornoobs/">LoL by Noob for Noobs</a>
-        <p class="desc">Guide League of Legends pour débutants : champions, compétences, objets, avec leurs sources.</p>
-      </div>
-      <a class="src" href="https://github.com/xavinsky/lolbynoobfornoobs" title="Voir le repo GitHub">src</a>
-    </li>
-  </ul>
+    <div class="col">
+      <h2>Le Cercle du Neurone Disparu</h2>
+      <p class="intro">Projet d'étude Le Wagon sur la détection d'hallucinations des LLM —
+        <a class="title" href="https://github.com/le-cercle-du-neurone-disparu">groupe GitHub</a>.</p>
+      <ul>
+        <li>
+          <div class="body">
+            <a class="title" href="https://le-cercle-du-neurone-disparu.github.io/etude-recherche-hallucination-llm/">Veille — Détection d'hallucinations LLM</a>
+            <p class="desc">Groupes de travail, papiers de recherche et publications grand public.</p>
+          </div>
+          <a class="src" href="https://github.com/le-cercle-du-neurone-disparu/etude-recherche-hallucination-llm" title="Voir le repo GitHub">src</a>
+        </li>
+        <li>
+          <div class="body">
+            <a class="title" href="/berlue-pitch/">Berlue — Pitch illustré</a>
+            <p class="desc">Présentation de Berlue, vérificateur d'hallucinations LLM.</p>
+          </div>
+          <a class="src" href="https://github.com/xavinsky/berlue-pitch" title="Voir le repo GitHub">src</a>
+        </li>
+        <li>
+          <div class="body">
+            <a class="title" href="https://github.com/le-cercle-du-neurone-disparu/berlue">berlue</a>
+            <p class="desc">Backend de détection : découpe la réponse d'un LLM en affirmations et vérifie chacune par SelfCheckGPT et un RAG sur FEVER.</p>
+          </div>
+        </li>
+        <li>
+          <div class="body">
+            <a class="title" href="https://github.com/le-cercle-du-neurone-disparu/aletheia">aletheia</a>
+            <p class="desc">Interface Streamlit du détecteur : poser une question, lire le verdict affirmation par affirmation.</p>
+          </div>
+        </li>
+      </ul>
+
+      <h2>Loisirs</h2>
+      <ul>
+        <li>
+          <div class="body">
+            <a class="title" href="/lolbynoobfornoobs/">LoL by Noob for Noobs</a>
+            <p class="desc">Guide League of Legends pour débutants : champions, compétences, objets, avec leurs sources.</p>
+          </div>
+          <a class="src" href="https://github.com/xavinsky/lolbynoobfornoobs" title="Voir le repo GitHub">src</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </main>
 </body>
 </html>
