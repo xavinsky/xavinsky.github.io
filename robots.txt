@@ -5,4 +5,3 @@ Sitemap: https://tekio.org/sitemap.xml
 Sitemap: https://tekio.org/memoria/sitemap.xml
 Sitemap: https://tekio.org/memoria-gcp/sitemap.xml
 Sitemap: https://tekio.org/search-video-google-cloud-tech/sitemap.xml
-Sitemap: https://tekio.org/lolbynoobfornoobs/sitemap.xml
